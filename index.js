@@ -3,10 +3,6 @@ const readline = require('readline');
 
 const input = readline.createInterface(process.stdin);
 
-const url = `http://api.weatherstack.com/current?access_key=${
-  process.env.myAPIKey
-}&query=${'Mexico'}`;
-
 const createUrl = (city) => {
   return `http://api.weatherstack.com/current?access_key=${process.env.myAPIKey}&query=${city}`;
 };
